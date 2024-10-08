@@ -1,0 +1,417 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+ /*.dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-family: "Poppins", sans-serif;
+    font-family: "Qwitcher Grypen", cursive;
+
+  */
+
+body{
+    background-color: #1a1a1a;
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/rest1.jpg');
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    margin-bottom:50px ;
+    border-bottom: px solid #ffefcd;
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.hamburger {
+    width: 45px;
+    height: 3px;
+    margin-top: 5px;
+    display: none;
+    border: none;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão fique acima do menu */
+    position: fixed;
+}
+
+.hamburger img{
+    display: block;
+}
+
+.hamburger button:hover{
+    background-color: #fff;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent;
+    transition: 1s;
+    border: 1px solif white;
+}
+
+.navbar.active{
+    width: 100%;
+    background-color: #cfc4b1b9;
+    transition: .5s;
+   
+}
+
+.navtitle{
+    margin-left: 40px;
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 45px;
+}
+
+.navlinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navlinks a{
+    color: #f7d794;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-family: "Poppins" ;
+}
+.navlinks a:hover{
+    background-color: #1e2b25;
+    
+}
+.herosection{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f5f5f5;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+
+.herosection h1{
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.herosection h2{
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    background-color: #f5f5f517;
+    border-radius: 15px  15px 0px 0px;
+}
+
+.about{
+    padding: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+}
+
+.about h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    width: 70%;
+    text-transform: capitalize;
+}
+
+.about p{
+    width: 80%;
+    color: #f5f5f5;
+    margin: 10px;
+    text-align: center;
+}
+
+.team-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+
+.team {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: auto;
+    width: 80%;
+    padding: 20px;
+    
+}
+
+.team h1 {
+    margin: 10px;
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+.team-member {
+    width: 100%;
+    border: 2px solid transparent;
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #1e2b25;
+    border-radius: 15px; 
+    padding: 20px;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.5); 
+}
+
+.team-member img {
+    margin: 10px;
+    width:300px; 
+    height: 260px;
+    border-radius: 15px; 
+    transition: transform 0.3s ease; /* Animação de hover */
+}
+
+.team-member img:hover {
+    transform: scale(1.05); /* Efeito de zoom ao passar o mouse */
+}
+
+.text {
+    width: 50%; /* Mais espaço para o texto */
+    color: #fff;
+    font-family: "Poppins";
+    font-size: 16px;
+    line-height: 1.6;
+    padding: 20px;
+    text-align: left;
+}
+
+.text h2{
+    margin: 10px;
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 60px;
+    text-transform: capitalize;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 40px;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-family: "Poppins";
+    color: #f5f5f5;
+    
+}
+
+.footertitle{
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 40px;
+}
+
+.social-media{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-media img:hover{
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+
+@media (max-width: 768px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+
+        display: block;
+        position: fixed;
+        right: 10px; /* ajusta o posicionamento na tela */
+    }
+    .navlinks {
+        position: fixed;
+        top: 75px;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        border-radius: 10px;
+        clip-path: circle(0 at 100% 50%);
+        transition: clip-path 1s ease-out;
+        background-color: rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .navlinks.active {
+        clip-path: circle(150% at 100% 50%);
+        pointer-events: all;
+    }
+
+    .navtitle{
+        display: block;
+        width: 80%;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .herosection{
+        width: 100%; 
+    }
+    
+    .title{
+        font-size: 30px;
+    }
+
+    .about h1{
+        font-size: 40px;
+        width: 100%;
+        
+    }
+
+    .about p{
+        width: 100%;
+        font-size: 14px;
+    }
+
+    .team {
+        width: 100%;
+        padding: 10px;
+        
+    }
+
+    .team h1 {
+        font-size: 40px;
+    }
+
+    .team-member {
+        flex-direction: column; 
+        margin: 5px;
+        width: 100%;
+    }
+
+    .text {
+        width: 100%;
+        text-align: center;
+    }
+
+    .text h2{
+        font-size: 30px;
+    }
+
+    .team-member img {
+        width: 90%;
+        height: auto;
+    }
+
+    footer{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .footertitle{
+        display: flex;
+        height: auto;
+        justify-content: center;
+        text-align:center;
+        color: #f7d794;
+        font-family: "Qwitcher Grypen";
+        font-size: 20px;
+    }
+
+    footer p{
+        width: 40%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .social-media{
+        width: 30%;
+    }
+
+    .social-media img{
+        width: 30px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}

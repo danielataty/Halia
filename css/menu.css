@@ -1,0 +1,486 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ /*.dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-family: "Poppins", sans-serif;
+    font-family: "Qwitcher Grypen", cursive;
+
+  */
+body{
+    background-color: #1a1a1a;
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/img4.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin-bottom:50px ;
+    border-bottom: px solid #ffefcd;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+/*Ainda n entendi bem, algumas funcionalidades*/
+
+.hamburger {
+    width: 30px;
+    height: 3px;
+    margin-top: 5px;
+    display: none;
+    border: none;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão fique acima do menu */
+    position: fixed;
+}
+
+.hamburger img{
+    display: block;
+}
+
+.hamburger button:hover{
+    background-color: #fff;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent;
+    transition: 1s;
+    
+}
+
+.navbar.active{
+    width: 100%;
+    background-color: #cfc4b1b9;
+    transition: .5s;
+   
+}
+
+.navtitle{
+    margin-left: 40px;
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 45px;
+}
+
+.navlinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navlinks a{
+    color: #f7d794;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-family: "Poppins" ;
+}
+.navlinks a:hover{
+    background-color: #1e2b25;
+    
+}
+
+.herosection{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f5f5f5;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+
+.herosection h1{
+   
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.herosection h2{
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    padding: 20px 20px;
+}
+
+.menu{
+    height:auto ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 5px 110px;
+    border-radius: 50px 5px 50px 5px;
+    flex-wrap: wrap;
+    margin: 15px;
+}
+
+
+#menu-img {
+    width: 400px;
+    height: 400px;
+    border-radius: 10px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: img 2s ease;
+}
+
+#menu-img img{
+    
+    box-shadow: 2px 4px 10px #f7d89431;
+    border-radius: 10px;
+}
+
+.section{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+    border: 3px solid #f7d794;
+    border-radius: 20px;
+}
+
+.menu-category{
+    width: 60%;
+    display: flex;
+    justify-content: space-around;
+    margin: 10px auto;
+    padding: 10px;
+} 
+
+.menu-btn {
+    display: flex;
+    padding: 20px 20px;
+    margin: 0 10px;
+    background-color: #1e2b25; 
+    color: #f7d794;
+    border: 1px solid #f7d89457;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.menu-btn:hover {
+    background-color: #404040;
+    transition: background-color 0.3s ease; /* Transição suave de cor */
+}
+  
+.menu-btn.active {
+    background-color: #575757; /* Azul para o botão ativo */
+    color: #f7d794;
+}
+  
+.menu-content{
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    border-radius: 10px;
+    margin: 10px auto;
+    color: #f7d794;
+    display: flex;
+    text-align:center;
+    justify-content: space-around;
+    flex-direction: row;
+    transition: 1s;
+}
+
+.firstsection{
+    height: 250px;
+    height: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.firstsection h1{
+    margin: 40px;
+    text-align:center;
+    color: #f7d794;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 40px;
+}
+
+.firstsection h2{
+    letter-spacing: 3px;
+    margin: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.firstsection p{
+    margin: 10px;
+    font-style: italic;
+}
+
+.menu-section {
+    display: none;
+    font-family: "Poppins";
+    letter-spacing: 2px;
+    height: auto;
+}
+
+.menu-section h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Qwitcher Grypen";
+    font-size: 60px;
+    margin: 10px;
+    width: 100%;
+}
+
+.menu-section ul{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.menu-section ul li{
+    text-transform: none;
+    border-bottom: 2px solid #f5f5f5;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    flex-direction: column;
+    width: 45%;
+    padding: 10px;
+    margin: 10px;
+    text-align: justify;
+}
+
+.menu-section ul li h3{
+    text-align: justify;
+    border-bottom: 2px solid #f5f5f5;
+    margin: 10px;
+    font-family: "Poppins";
+    font-size: 15px;
+}
+
+.menu-section ul li p{
+   font-size: 14px;
+}
+  
+.menu-section.active {
+    display: block;
+}
+  
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 40px;
+    border-top: 3px solid #f7d794;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-family: "Poppins";
+    color: #f5f5f5;
+    
+}
+
+.footertitle{
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 40px;
+}
+
+.social-media{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-media img:hover{
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+
+@media (max-width: 805px) {
+
+    .hamburger {
+        display: block;
+        position: fixed;
+        right: 10px; /* ajusta o posicionamento na tela */
+    }
+
+    .navlinks {
+        position: fixed;
+        top: 75px;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        border-radius: 10px;
+        clip-path: circle(0 at 100% 50%);
+        transition: clip-path 1s ease-out;
+        background-color: rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .navlinks.active {
+        clip-path: circle(150% at 100% 50%);
+        pointer-events: all;
+    }
+
+    .navtitle{
+        display: block;
+        width: 100%;
+        justify-content: center;
+    }
+
+    main{
+        padding: 0px;
+    }
+
+    .menu{
+        width: 100%;
+        margin: 3px;
+        
+    }
+
+    #menu-img {
+        display: none;
+    }
+
+    .section{
+        width: 90%;
+        padding: 5px;
+    }
+    
+    .menu-category{
+        width: 80%;
+    } 
+
+    .menu-btn {
+        padding: 10px 10px;
+        margin: 0 5px;
+    }
+
+    .menu-content{
+        margin: 5px auto;
+    }
+    
+    .firstsection h1{
+        margin: 20px;
+        font-size: 25px;
+    }
+    
+    .firstsection h2{
+        letter-spacing: 1.5px;
+        font-size: 15px;
+    }
+
+    .menu-section h2{
+        font-size: 30px;
+        margin: 5px;
+
+    }
+
+    .menu-section ul li{
+        width: 80%;
+        padding: 5px;
+        margin: 5px;
+    }
+
+    .menu-section ul li h3{
+        margin: 5px;
+        font-size: 13px;
+    }
+
+.menu-section ul li p{
+        font-size: 11px;
+}
+    
+footer{
+    display: flex;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.footertitle{
+    display: flex;
+    height: auto;
+    justify-content: center;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 20px;
+}
+
+footer p{
+    width: 40%;
+    text-align: center;
+    font-size: 10px;
+}
+
+.social-media{
+    width: 30%;
+}
+
+.social-media img{
+    width: 30px;
+    height: 40px;
+    padding: 10px;
+    border-radius: 10px;
+}
+}

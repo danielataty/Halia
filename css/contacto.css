@@ -1,0 +1,349 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    
+}
+
+ /*.dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-family: "Poppins", sans-serif;
+    font-family: "Qwitcher Grypen", cursive;
+
+  */
+
+body{
+    background-color: #1a1a1a;
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/rest1.jpg');
+    background-size: cover;
+    background-position: bottom; 
+    background-repeat: no-repeat;
+    margin-bottom:50px ;
+    border-bottom: px solid #ffefcd;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+
+.hamburger {
+    width: 45px;
+    height: 3px;
+    margin-top: 5px;
+    display: none;
+    border: none;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão fique acima do menu */
+    position: fixed;
+}
+
+.hamburger img{
+    display: block;
+}
+
+.hamburger button:hover{
+    background-color: #fff;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent;
+    transition: 1s;
+    border: 1px solif white;
+}
+
+.navbar.active{
+    width: 100%;
+    background-color: #cfc4b1b9;
+    transition: .5s;
+   
+}
+
+.navtitle{
+    margin-left: 40px;
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 45px;
+}
+
+.navlinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navlinks a{
+    color: #f7d794;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-family: "Poppins" ;
+}
+.navlinks a:hover{
+    background-color: #1e2b25;
+    
+}
+.herosection{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f5f5f5;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+
+.herosection h1{
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.herosection h2{
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+.contact {
+    padding: 40px;
+    text-align: center;
+}
+
+h1 {
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+p {
+    font-size: 16px;
+    margin-bottom: 30px;
+    color: #f5f5f5;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 15px;
+}
+
+input, textarea {
+    background-color: #222;
+    color: #f7d794;
+    border: 1px solid #333;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+    max-width: 290px;
+}
+
+input::placeholder{
+    color: #f7d794;
+}
+
+textarea {
+    max-width: 600px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 10%;
+    padding: 10px;
+    background-color: #f7d794;
+    color: #1e2b25;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 10px;
+  }
+  
+button:hover {
+    background-color: #1e2b25;
+    color: #f7d794;
+  }
+
+  footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 40px;
+    border-top: 3px solid #f7d794;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-family: "Poppins";
+    color: #f5f5f5;
+    
+}
+
+.footertitle{
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 40px;
+}
+
+.social-media{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-media img:hover{
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+
+@media (max-width: 805px) {
+    body{
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+
+        display: block;
+        position: fixed;
+        right: 10px; /* ajusta o posicionamento na tela */
+    }
+    .navlinks {
+        position: fixed;
+        top: 75px;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        border-radius: 10px;
+        clip-path: circle(0 at 100% 50%);
+        transition: clip-path 1s ease-out;
+        background-color: rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .navlinks.active {
+        clip-path: circle(150% at 100% 50%);
+        pointer-events: all;
+    }
+
+    .navtitle{
+        display: block;
+        width: 80%;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .herosection{
+        width: 100%; 
+    }
+
+    h1 {
+        font-size: 2rem;
+    }
+
+    .form-group {
+        flex-direction: column;
+        max-width: 100%;
+    }
+
+    input, textarea {
+        max-width: 100%;
+    }
+
+    button {
+        width: 100%;
+        max-width: 200px;
+    }
+
+    footer{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .footertitle{
+        display: flex;
+        height: auto;
+        justify-content: center;
+        text-align:center;
+        color: #f7d794;
+        font-family: "Qwitcher Grypen";
+        font-size: 20px;
+    }
+
+    footer p{
+        width: 40%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .social-media{
+        width: 30%;
+    }
+
+    .social-media img{
+        width: 30px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
+

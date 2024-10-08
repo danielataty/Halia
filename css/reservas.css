@@ -1,0 +1,459 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+
+ /*.dancing-script-<uniquifier> {
+    font-family: "Dancing Script", cursive;
+    font-family: "Poppins", sans-serif;
+    font-family: "Qwitcher Grypen", cursive;
+
+  */
+body{
+    background-color: #1a1a1a;
+}
+
+.hero {
+    width: 100%;
+    height: 300px;
+    background-image: url('/img/rest.jpg');
+    background-size: cover;
+    background-position: center; 
+    background-repeat: no-repeat;
+    margin-bottom:50px ;
+    border-bottom: px solid #ffefcd;
+
+    border-radius: 0px 0px 10px 10px;
+}
+
+.hamburger {
+    width: 50px;
+    height: 3px;
+    margin-top: 5px;
+    display: none;
+    border: none;
+    top: 20px;
+    right: 20px;
+    background: transparent;
+    cursor: pointer;
+    z-index: 1000; /* Garante que o botão fique acima do menu */
+    position: fixed;
+}
+
+.hamburger img{
+    display: block;
+}
+
+.hamburger button:hover{
+    background-color: #fff;
+}
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: transparent;
+    transition: 1s;
+    
+}
+
+.navbar.active{
+    width: 100%;
+    background-color: #cfc4b1b9;
+    transition: .5s;
+   
+}
+
+.navtitle{
+    margin-left: 40px;
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 45px;
+}
+
+.navlinks{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.navlinks a{
+    color: #f7d794;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 10px;
+    transition: 0.5s;
+    border-radius: 10px;
+    font-family: "Poppins" ;
+}
+.navlinks a:hover{
+    background-color: #1e2b25;
+    
+}
+
+.herosection{
+    width: 100%;
+    height: 350px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    flex-direction: column;
+    color: #f5f5f5;
+    font-family: "Poppins";
+    text-transform: uppercase;
+}
+
+
+.herosection h1{
+    color: #f7d794;
+    margin-bottom: 0px;
+    font-family: "Qwitcher Grypen";
+    font-size: 80px;
+    text-transform: capitalize;
+}
+
+.herosection h2{
+    letter-spacing: 3px;
+    margin-bottom: 5px;
+    font-size: 25px;
+    border-radius: 10px;
+    padding: 10px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.table{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+    border: 5px solid #f7d794;
+    width: 70%;
+    height: auto;
+}
+
+.table-text{
+    margin: 10px;
+    padding: 10px;
+    width: 90%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #f5f5f5;
+}
+
+.table-head{
+    text-align: center;
+}
+
+.table-head p{
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 25px;
+}
+
+.table-head h1{
+    color: #f7d794;
+    margin-bottom: 5px;
+    font-family: "Poppins";
+    font-size: 25px;
+    text-transform: capitalize;
+}
+
+.table-extra {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: justify;
+    font-size: 13px;
+    width: 80%;
+}
+
+.first{
+    text-align: center;
+}
+
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 60%;
+    height: auto;
+    padding: 10px;
+}
+
+.form-group {
+    margin: 20px;
+    width: 40%;
+}
+  
+label {
+    display: block;
+    font-size: 20px;
+    margin-bottom: 5px;
+    color: #f7d794;
+}
+  
+input {
+    width: 80%;
+    padding: 10px;
+    border: 1px solid #f7d794;
+    border-radius: 4px;
+    background-color: #2b2b2b;
+    color: #fff;
+    font-size: 16px;
+}
+  
+input::placeholder {
+    color: #f7d794;
+  }
+  
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding: 10px;
+    background-color: #f7d794;
+    color: #1e2b25;
+    border: none;
+    border-radius: 4px;
+    font-size: 18px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #1e2b25;
+    color: #f7d794;
+  }
+
+.first-text{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 30px;
+}
+
+iframe{
+    width: 80%;
+    height: 250px;
+    margin: 20px auto;
+}
+
+footer{
+    height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-direction: row;
+    margin-top: 40px;
+    border-top: 3px solid #f7d794;
+    padding: 20px;
+    text-align: center;
+}
+
+footer p{
+    font-family: "Poppins";
+    color: #f5f5f5;
+    
+}
+
+.footertitle{
+    height: auto;
+    text-align:center;
+    color: #f7d794;
+    font-family: "Qwitcher Grypen";
+    font-size: 40px;
+}
+
+.social-media{
+    width: 15%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.social-media img{
+    width: 60px;
+    height: 60px;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.social-media img:hover{
+    background-color: rgba(128, 128, 128, 0.466);
+}
+
+
+@media (max-width: 805px) {
+
+    body{
+        overflow-x: hidden;
+    }
+
+    .hamburger {
+
+        display: block;
+        position: fixed;
+        right: 10px; /* ajusta o posicionamento na tela */
+    }
+    .navlinks {
+        position: fixed;
+        top: 75px;
+        right: 0;
+        width: 200px;
+        height: 100vh;
+        border-radius: 10px;
+        clip-path: circle(0 at 100% 50%);
+        transition: clip-path 1s ease-out;
+        background-color: rgba(0, 0, 0);
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        pointer-events: none;
+    }
+
+    .navlinks.active {
+        clip-path: circle(150% at 100% 50%);
+        pointer-events: all;
+    }
+
+    .navtitle{
+        display: block;
+        width: 80%;
+        margin-left: 10px;
+        justify-content: center;
+    }
+
+    .herosection{
+        width: 100%; 
+    }
+    
+    .title{
+        font-size: 30px;
+    }
+
+    .table{
+        padding: 5px;
+        border: 3px solid #f7d794;
+        width: 100%;
+    }
+
+    .table-text{
+        margin: 5px;
+        padding: 5px;
+        width: 100%;
+    }
+    
+    .table-head p{
+        font-size: 28px;
+    }
+
+    .table-head h1{
+        color: #f7d794;
+        margin-bottom: 5px;
+        font-family: "Poppins";
+        font-size: 20px;
+    
+    }
+
+    .table-extra {
+        font-size: 14px;
+        width: 80%;
+    }
+
+    form{ 
+        flex-direction: column;
+        width: 100%;
+    } 
+
+    .form-group {
+        display: flex;
+        justify-content: center;
+        align-items:center ;
+        flex-direction:column ;
+        width: 100%;
+    }
+
+    label {
+        font-size: 15px;
+        margin-bottom: 3px;
+    }
+
+    button {
+        display: flex;
+        width: 50%;
+        padding: 5px;
+        font-size: 14px;
+    }
+
+    .first-text{
+        margin: 10px;
+        font-size: 20px;
+    }
+
+
+
+    footer{
+        display: flex;
+        height: auto;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+    }
+    
+    .footertitle{
+        display: flex;
+        height: auto;
+        justify-content: center;
+        text-align:center;
+        color: #f7d794;
+        font-family: "Qwitcher Grypen";
+        font-size: 20px;
+    }
+
+    footer p{
+        width: 40%;
+        text-align: center;
+        font-size: 10px;
+    }
+
+    .social-media{
+        width: 30%;
+    }
+
+    .social-media img{
+        width: 30px;
+        height: 40px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+}
