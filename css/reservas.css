@@ -2,16 +2,12 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+
 }
 
- /*.dancing-script-<uniquifier> {
-    font-family: "Dancing Script", cursive;
-    font-family: "Poppins", sans-serif;
-    font-family: "Qwitcher Grypen", cursive;
-
-  */
 body{
     background-color: #1a1a1a;
+    overflow-x: hidden;
 }
 
 .hero {
@@ -37,7 +33,7 @@ body{
     right: 20px;
     background: transparent;
     cursor: pointer;
-    z-index: 1000; /* Garante que o botão fique acima do menu */
+    z-index: 1000; 
     position: fixed;
 }
 
@@ -46,7 +42,7 @@ body{
 }
 
 .hamburger button:hover{
-    background-color: #fff;
+    background-color: transparent;
 }
 
 .navbar{
@@ -144,7 +140,7 @@ main{
     align-items: center;
     padding: 10px;
     border: 5px solid #f7d794;
-    width: 70%;
+    width: 100%;
     height: auto;
 }
 
@@ -235,13 +231,13 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    width: 30%;
+    width: 35%;
     padding: 10px;
     background-color: #f7d794;
     color: #1e2b25;
     border: none;
     border-radius: 4px;
-    font-size: 18px;
+    font-size: 16px;
     cursor: pointer;
   }
   
@@ -267,15 +263,12 @@ iframe{
 }
 
 footer{
-    height: 70px;
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    margin-top: 40px;
-    border-top: 3px solid #f7d794;
-    padding: 20px;
-    text-align: center;
+    
 }
 
 footer p{
@@ -285,11 +278,12 @@ footer p{
 }
 
 .footertitle{
+   
     height: auto;
     text-align:center;
     color: #f7d794;
     font-family: "Qwitcher Grypen";
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .social-media{
@@ -300,8 +294,8 @@ footer p{
 }
 
 .social-media img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -318,21 +312,24 @@ footer p{
     }
 
     .hamburger {
-
         display: block;
         position: fixed;
-        right: 10px; /* ajusta o posicionamento na tela */
+        right: 10px; 
+    }
+
+    .hamburger:hover{
+        background-color: transparent;
     }
     .navlinks {
         position: fixed;
-        top: 75px;
+        top: 55px;
         right: 0;
-        width: 200px;
+        width: 150px;
         height: 100vh;
         border-radius: 10px;
         clip-path: circle(0 at 100% 50%);
         transition: clip-path 1s ease-out;
-        background-color: rgba(0, 0, 0);
+        background-color: #2b2b2b;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -347,7 +344,7 @@ footer p{
 
     .navtitle{
         display: block;
-        width: 80%;
+        width: 100%;
         margin-left: 10px;
         justify-content: center;
     }

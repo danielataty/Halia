@@ -4,12 +4,6 @@
     box-sizing: border-box;
 }
 
- /*.dancing-script-<uniquifier> {
-    font-family: "Dancing Script", cursive;
-    font-family: "Poppins", sans-serif;
-    font-family: "Qwitcher Grypen", cursive;
-
-  */
 body{
     background-color: #1a1a1a;
 }
@@ -27,7 +21,6 @@ body{
     border-radius: 0px 0px 10px 10px;
 }
 
-/*Ainda n entendi bem, algumas funcionalidades*/
 
 .hamburger {
     width: 30px;
@@ -47,9 +40,6 @@ body{
     display: block;
 }
 
-.hamburger button:hover{
-    background-color: #fff;
-}
 
 .navbar{
     position: fixed;
@@ -305,15 +295,12 @@ main{
 }
   
 footer{
-    height: 70px;
+    height: 80px;
+    width: 100%;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-direction: row;
-    margin-top: 40px;
-    border-top: 3px solid #f7d794;
-    padding: 20px;
-    text-align: center;
+    
 }
 
 footer p{
@@ -323,11 +310,12 @@ footer p{
 }
 
 .footertitle{
+   
     height: auto;
     text-align:center;
     color: #f7d794;
     font-family: "Qwitcher Grypen";
-    font-size: 40px;
+    font-size: 35px;
 }
 
 .social-media{
@@ -338,8 +326,8 @@ footer p{
 }
 
 .social-media img{
-    width: 60px;
-    height: 60px;
+    width: 50px;
+    height: 50px;
     padding: 10px;
     border-radius: 10px;
 }
@@ -349,24 +337,25 @@ footer p{
 }
 
 
+
 @media (max-width: 805px) {
 
     .hamburger {
         display: block;
         position: fixed;
-        right: 10px; /* ajusta o posicionamento na tela */
+        right: 10px;
     }
 
     .navlinks {
         position: fixed;
-        top: 75px;
+        top: 65px;
         right: 0;
         width: 200px;
         height: 100vh;
         border-radius: 10px;
         clip-path: circle(0 at 100% 50%);
         transition: clip-path 1s ease-out;
-        background-color: rgba(0, 0, 0);
+        background-color: #2b2b2b;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
