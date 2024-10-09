@@ -1,0 +1,1 @@
+This repository contains the full development project for Halia Restaurant's website. Inspired by the elegance and sophistication of fine dining, this project showcases a modern, responsive design with an immersive user experience.
