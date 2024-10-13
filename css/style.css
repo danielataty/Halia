@@ -25,7 +25,7 @@ body{
 
 
 .hamburger {
-    width: 30px;
+    width: 40px;
     height: 3px;
     margin-top: 5px;
     display: none;
@@ -250,8 +250,12 @@ section{
     width: 550px;
     height: 200px;
     display: flex;
-    margin-left: 10px;
     justify-content: space-around;
+}
+
+.text-hours .title{
+    font-size: 35px;
+    
 }
 
 .hours .hour1{
@@ -331,14 +335,14 @@ footer p{
     }
     .navlinks {
         position: fixed;
-        top: 55px;
+        top: 60px;
         right: 0;
-        width: 150px;
+        width: 250px;
         height: 100vh;
         border-radius: 10px;
         clip-path: circle(0 at 100% 50%);
         transition: clip-path 1s ease-out;
-        background-color: #2b2b2b;
+        background-color: #2b2b2bc5;
         display: flex;
         flex-direction: column;
         justify-content: space-around;
@@ -367,11 +371,11 @@ footer p{
         margin: 5px 10px;
         padding: 5px 10px;
     }
-    
-    .title{
-        font-size: 30px;
+
+    .hour1 .title{
+        font-size: 35px;
     }
-    
+
     .cards-service{
         width: 70%;
         flex-direction: column;
@@ -393,8 +397,18 @@ footer p{
         height: 300px;
     }
 
-    .title{
-        font-size: 20px;
+    .hours .title{
+        font-size: 45px;
+    }
+
+    .text-hours{
+        width: 95%;
+        height: auto;
+    }
+
+    .text-hours .title{
+        font-size: 22px;
+        font-weight: bolder;
     }
  
     footer{
